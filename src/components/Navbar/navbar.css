@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .navbar {
+    width: 100%;
+    max-width: 1144px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003580;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+
+}
+
+.container .navbar .logo span {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-left: 2rem;
+    color: #ffffff;
+}
+
+.container .navbar .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container .navbar .nav-item .nav-list a {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+    color:#003580;
+    background-color: #ffffff;
+    font-weight: 600;
+}
+
