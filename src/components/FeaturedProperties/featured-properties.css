@@ -1,0 +1,60 @@
+.f-list {
+    width: 100%;
+    max-width: 1144px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.f-list .f-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.f-list .f-item img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.f-list .f-item .f-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.75rem;
+    opacity: .7;
+    padding: 1.5rem 0rem;
+}
+
+.f-list .f-item .f-title span {
+    opacity: .9;
+}
+
+.f-list .f-item .f-title .f-price {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.f-list .f-item .f-title .f-btn button {
+    background-color: #003580;
+    color: #ffffff;
+    padding: 0.75rem;
+    font-size: 1.75rem;
+    margin: 0.5rem 1rem 0rem 0rem;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 600;
+}
+
+.f-list .f-item .f-title .f-btn span {
+    font-weight: 700;
+    font-size: 1.75rem;
+}

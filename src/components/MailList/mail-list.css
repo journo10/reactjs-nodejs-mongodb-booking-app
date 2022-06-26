@@ -1,0 +1,60 @@
+.m-list {
+    width: 100%;
+    height: 30rem;
+    margin-top: 5rem;
+    background-color: #00224f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.m-list .m-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 2rem;
+    padding: 5rem;
+    text-align: center;
+}
+
+.m-list .m-item .m-title h1 {
+    font-size: 2.75rem;
+    font-weight: 500;
+}
+
+.m-list .m-item .m-title p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.m-list .m-item .m-input {
+    width: 60rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.m-list .m-item .m-input input {
+    width: 75%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.m-list .m-item .m-input button {
+    width: 25%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #0071c2;
+    color: #ffffff;
+    font-size: 1.75rem;
+}

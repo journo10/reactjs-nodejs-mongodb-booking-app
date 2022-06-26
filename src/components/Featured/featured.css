@@ -1,0 +1,41 @@
+.featured {
+    width: 100%;
+    max-width: 1144px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    z-index: 9;
+}
+
+.featured .featured-item {
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+    flex: 1
+}
+
+.featured .featured-item:hover {
+    border: 1px solid #febb02;
+}
+
+.featured .featured-item .featured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .9;
+}
+
+.featured .featured-item .featured-img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.featured .featured-item .featured-title {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    font-size: 1.5rem;
+}
