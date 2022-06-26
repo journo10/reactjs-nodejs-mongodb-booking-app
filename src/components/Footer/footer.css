@@ -23,6 +23,10 @@
     cursor: pointer;
 }
 
+.footer .container .footer-list .footer-item:hover {
+    color: #8e6601;
+}
+
 .footer .footer-text {
     text-align: center;
     font-size: 1.75rem;
