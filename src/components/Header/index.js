@@ -5,6 +5,7 @@ import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css';
 import { format } from "date-fns";
 import { tr } from 'date-fns/locale'
+import { useNavigate } from 'react-router-dom';
 
 //date
 const initialDate = [{
@@ -27,11 +28,19 @@ const Header = ({ type }) => {
   const [openOptions, setOpenOtions] = useState(false);
   const [options, setOptions] = useState(initialOptions);
 
+  const [destination, setDestination] = useState("");
+
   const handleOptions = (name, operation) => {//operation=>artır ve azalt button
     setOptions((prev) => ({
       ...prev,
       [name]: operation === "i" ? options[name] + 1 : options[name] - 1
     }))
+  }
+
+  //search
+  const navigate = useNavigate()
+  const handleSearch = () => {
+    navigate("/hotels", { state: { destination, date, options } });
   }
 
   return (
@@ -69,7 +78,11 @@ const Header = ({ type }) => {
             <div className="header-search">
               <div className="search-item">
                 <i className="fa-solid fa-bed"></i>
-                <input type="text" className='search-input' placeholder='Nereye gidiyorsunuz?' />
+                <input
+                  onChange={(e) => setDestination(e.target.value)}
+                  type="text"
+                  className='search-input'
+                  placeholder='Nereye gidiyorsunuz?' />
               </div>
               <div className="search-item">
                 <i className="fa-solid fa-calendar-days"></i>
@@ -85,6 +98,7 @@ const Header = ({ type }) => {
                     moveRangeOnFirstSelection={false}
                     ranges={date}
                     className="date"
+                    minDate={new Date()}
                   />
                 )}
               </div>
@@ -142,7 +156,7 @@ const Header = ({ type }) => {
                   </div>
                 )}
               </div>
-              <button className='header-btn' type='button'>Ara</button>
+              <button onClick={handleSearch} className='header-btn' type='button'>Ara</button>
             </div>
           </>
         }
