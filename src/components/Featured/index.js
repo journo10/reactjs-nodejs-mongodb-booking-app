@@ -43,6 +43,3 @@ const Featured = () => {
 }
 
 export default Featured
-
-
-//45

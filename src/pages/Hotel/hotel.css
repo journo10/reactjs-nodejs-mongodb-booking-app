@@ -1,0 +1,180 @@
+.hotel-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.hotel-container .hotel-wrapper {
+    width: 100%;
+    max-width: 1144px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.hotel-container .hotel-wrapper .hotel-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hotel-container .hotel-wrapper .book-now {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    background-color: #0071c2;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.hotel-container .hotel-wrapper .book-now:hover {
+    background-color: #003580;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-weight: 500;
+    gap: 1rem;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-adress-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-distance {
+    color: #0071c2;
+    font-weight: 300;
+    font-size: 1.75rem;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-price-highlight {
+    color: #008009;
+    font-weight: 300;
+    font-size: 1.75rem;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-imeges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-imeges .hotel-img-wrapper {
+    width: 33%;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-imeges .hotel-img-wrapper img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-details .hotel-details-text {
+    flex: 3;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-details .hotel-details-text .hotel-desc {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-details .hotel-details-price {
+    flex: 1;
+    background-color: #ebf3ff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-details .hotel-details-price>h1 {
+    font-size: 1.75rem;
+    color: #555;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-details .hotel-details-price>span {
+    font-size: 1.25rem;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-details .hotel-details-price>h2 {
+    font-weight: 300;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-details .hotel-details-price>button {
+    border: none;
+    outline: none;
+    padding: 1rem 2rem;
+    background-color: #0071c2;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.hotel-container .hotel-wrapper .hotel-adress .hotel-details .hotel-details-price>button:hover {
+    background-color: #003580;
+
+}
+
+/* Slider */
+.hotel-container .slider {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0000009c;
+    z-index: 999;
+    display: flex;
+    align-items: center; 
+}
+
+.hotel-container .slider .slider-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotel-container .slider .slider-wrapper .slider-img {
+    width: 75%;
+    height: 75%;
+    border-radius: 5px;
+}
+
+.hotel-container .slider .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #d3d3d3;
+    cursor: pointer;
+}
+
+.hotel-container .slider .arrow {
+    margin: 20px;
+    font-size: 50px;
+    color: #d3d3d3;
+    cursor: pointer;
+}
