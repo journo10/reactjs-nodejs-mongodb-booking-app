@@ -1,0 +1,125 @@
+.search-item {
+    border: 1px solid #c6c6c6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin-bottom: 20px;
+    gap: 2rem;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.search-item .search-img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.search-item .search-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex: 2;
+
+}
+
+.search-item .search-desc .search-title {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #0071c2;
+}
+
+.search-item .search-desc .search-distance {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.search-item .search-desc .search-taxi-op {
+    font-size: 1.25rem;
+    background-color: #008009;
+    color: white;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-item .search-desc .search-subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.search-item .search-desc .search-features {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.search-item .search-desc .search-cancel-op {
+    font-size: 1.25rem;
+    color: #008009;
+    font-weight: bold;
+}
+
+.search-item .search-desc .search-cancel-op-subtitle {
+    font-size: 1.25rem;
+    color: #008009;
+}
+
+.search-item .search-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-item .search-details .search-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-item .search-details .search-rating>span {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.search-item .search-details .search-rating>button {
+    background-color: #003580;
+    color: white;
+    padding: 0.75rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search-item .search-detail-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: right;
+    margin-top: 10rem;
+}
+
+.search-item .search-detail-texts .search-price {
+    font-size: 2.25rem;
+}
+
+.search-item .search-detail-texts .search-tax-op {
+    font-size: 1.25rem;
+    color: gray;
+}
+
+.search-item .search-detail-texts .search-check-button {
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

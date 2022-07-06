@@ -95,7 +95,7 @@
     padding: 0.75rem;
     border: none;
     outline: none;
-    width: 30rem;
+    width: 25rem;
 }
 
 .header .header-container .header-search .search-item i {
@@ -105,9 +105,9 @@
 }
 
 .header .header-container .header-search .search-item span {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    width: 25rem;
+    width: 20rem;
     cursor: pointer;
 }
 
