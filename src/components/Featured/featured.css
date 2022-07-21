@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
     z-index: 9;
 }
@@ -14,7 +15,7 @@
     border-radius: 10px;
     overflow: hidden;
     height: 250px;
-    flex: 1
+    width: 370px;
 }
 
 .featured .featured-item:hover {
